@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<!--[if IE 9 ]><html class="ie9"><![endif]-->
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cat&aacute;logo de pel&iacute;culas</title>
+
+  <!-- Vendor CSS -->
+  <link href="/css/animate.min.css" rel="stylesheet" />
+  <link href="/css/sweet-alert.css" rel="stylesheet" />
+  <link href="/css/material-design-iconic-font.min.css" rel="stylesheet" />
+  <link href="/css/jquery.bootgrid.min.css" rel="stylesheet" />
+  <!-- CSS -->
+  <link href="/css/normalize.min.css" rel="stylesheet" />
+  <link href="/css/app.min.css" rel="stylesheet" />
+  <link href="/css/style.css" rel="stylesheet" />
+  <style>
+    .profile-pic > img {
+            border-color: #000000 !important;
+            border-color: rgba(0, 0, 0, 0) !important;
+        }
+    </style>
+</head>
+
+<body ng-app="movies">
+  <header id="header">
+    <ul class="header-inner">
+      <li id="menu-trigger" data-trigger="#sidebar">
+        <div class="line-wrap">
+          <div class="line top"></div>
+          <div class="line center"></div>
+          <div class="line bottom"></div>
+        </div>
+      </li>
+      <li>
+        <a href="/"><span class="zdmi collection-video"></span></a>
+      </li>
+      <li class="logo hidden-xs">
+        <a href="/"> API Robot</a>
+      </li>
+
+      <li class="pull-right">
+        <ul class="top-menu">
+          <li id="toggle-width">
+            <div class="toggle-switch">
+              <input id="tw-switch" type="checkbox" hidden="hidden">
+              <label for="tw-switch" class="ts-helper"></label>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a data-toggle="dropdown" class="tm-settings" href="#" aria-expanded="false"></a>
+            <ul class="dropdown-menu dm-icon pull-right">
+              <li>
+                <a href="#"><i class="zmdi zmdi-power"></i> Salir</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <!-- Top Search Content -->
+    </ul>
+  </header>
+
+  <section id="main">
+    <aside id="sidebar">
+      <div class="sidebar-inner c-overflow">
+        <div class="profile-menu">
+          <a href="#">
+            <div class="profile-pic">
+              <img src="/img/persona.png" alt="">
+            </div>
+
+            <div class="profile-info">
+              Buenos d&iacute;as
+              <i class="zmdi zmdi-arrow-drop-down"></i>
+            </div>
+          </a>
+
+          <ul class="main-menu">
+            <li>
+              <a href="#" onclick="logoout()"><i class="zmdi zmdi-time-restore"></i> Salir</a>
+            </li>
+          </ul>
+        </div>
+
+        <ul class="main-menu">
+            <li><a href="/#!/actions/"><i class="zmdi zmdi-power"></i> Acciones</a></li>
+            <li><a href="/#!/hactions/"><i class="zmdi zmdi-power"></i> Historial de acciones</a></li>
+            <li><a href="/#!/emotions/"><i class="zmdi zmdi-power"></i> Emociones</a></li>
+            <li><a href="/#!/hemotions/"><i class="zmdi zmdi-power"></i> Historial de emociones</a></li>
+        </ul>
+      </div>
+    </aside>
+    <section id="content" ng-view>
+    </section>
+  </section>
+
+  <footer id="footer">
+    Copyright &copy; 2018
+    <ul class="f-menu">
+    </ul>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+  <script src="/js/jquery.bootgrid.min.js"></script>
+  <script src="/js/bootstrap-growl.min.js"></script>
+  <script src="/js/waves.min.js"></script>
+  <script src="/js/sweet-alert.min.js"></script>
+  <script src="/js/jquery.nicescroll.min.js"></script>
+  <script src="/js/functions.min.js"></script>
+  <script src="/js/notify.js"></script>
+  <script src="/js/up.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.5/angular.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.5/angular-route.min.js"></script>
+  <script src="/js/app.js"></script>
+  <script src="/js/actions.js"></script>
+  <script src="/js/emotions.js"></script>
+</body>
+</html>
