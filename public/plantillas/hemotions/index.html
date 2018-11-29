@@ -1,0 +1,29 @@
+<div class="container" ng-controller="hemotions">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-header bgm-bluegray">
+                    <h2>Listado de Emociones <small></small></h2>
+                </div>
+                <div class="card-body table-responsive">
+                    <table class="table" id="data-table-basic">
+                        <thead>
+                            <tr>
+                                <th>Nombre</th>
+                                <th>Inicio</th>
+                                <th>Fin</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr ng-repeat="l in listado">
+                                <td>{{ l.emotion.name }}</td>
+                                <td>{{ l.begin }}</td>
+                                <td>{{ l.end }}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
