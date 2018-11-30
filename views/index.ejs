@@ -18,10 +18,18 @@
   <link href="/css/app.min.css" rel="stylesheet" />
   <link href="/css/style.css" rel="stylesheet" />
   <style>
-    .profile-pic > img {
-            border-color: #000000 !important;
-            border-color: rgba(0, 0, 0, 0) !important;
-        }
+      .profile-pic > img {
+        border-color: #000000 !important;
+        border-color: rgba(0, 0, 0, 0) !important;
+      }
+      .zone {
+        position: relative;
+        border-color: blue;
+        border-style: solid;
+        width: 400px;
+        height: 200px;
+        left: 0;
+      }
     </style>
 </head>
 
@@ -87,12 +95,12 @@
         </div>
 
         <ul class="main-menu">
-            <li><a href="/#!/actions/"><i class="zmdi zmdi-power"></i> Acciones</a></li>
-            <li><a href="/#!/eactions/"><i class="zmdi zmdi-power"></i> Control Acciones</a></li>
-            <li><a href="/#!/actions/logs"><i class="zmdi zmdi-power"></i> Historial de acciones</a></li>
-            <li><a href="/#!/emotions/"><i class="zmdi zmdi-power"></i> Emociones</a></li>
-            <li><a href="/#!/eemotions/"><i class="zmdi zmdi-power"></i> Control Emociones</a></li>
-            <li><a href="/#!/emotions/logs"><i class="zmdi zmdi-power"></i> Historial de emociones</a></li>
+          <li><a href="/#!/actions/"><i class="zmdi zmdi-power"></i> Acciones</a></li>
+          <li><a href="/#!/eactions/"><i class="zmdi zmdi-power"></i> Control Acciones</a></li>
+          <li><a href="/#!/actions/logs"><i class="zmdi zmdi-power"></i> Historial de acciones</a></li>
+          <li><a href="/#!/emotions/"><i class="zmdi zmdi-power"></i> Emociones</a></li>
+          <li><a href="/#!/eemotions/"><i class="zmdi zmdi-power"></i> Control Emociones</a></li>
+          <li><a href="/#!/emotions/logs"><i class="zmdi zmdi-power"></i> Historial de emociones</a></li>
         </ul>
       </div>
     </aside>
@@ -120,6 +128,7 @@
   <script src="/js/up.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.5/angular.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.5/angular-route.min.js"></script>
+  <script src="/js/nipplejs.js"></script>
   <script src="/js/app.js"></script>
   <script src="/js/controllers/actions.js"></script>
   <script src="/js/controllers/eactions.js"></script>
@@ -128,4 +137,5 @@
   <script src="/js/controllers/eemotions.js"></script>
   <script src="/js/controllers/hemotions.js"></script>
 </body>
+
 </html>
